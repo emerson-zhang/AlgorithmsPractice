@@ -19,12 +19,12 @@ object SelectionSortScala {
    * @param data
    */
 
-  def sort(data: Array[Integer]) {
+  def sort(data: Array[Int]) {
     for (
       i <- 0 until data.length - 1;
       j <- i until data.length
     ) {
-      if (data(j).compareTo(data(i)) < 0) {
+      if (data(j) < data(i)) {
         val temp = data(i)
         data(i) = data(j)
         data(j) = temp

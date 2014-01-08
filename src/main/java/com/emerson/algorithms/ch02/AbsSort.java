@@ -8,22 +8,24 @@ package com.emerson.algorithms.ch02;
  */
 public abstract class AbsSort {
 
-    public abstract void sort(Comparable[] data);
+    public static final int[] DATAS = new int[]{2, 1, 5, 7, 4, 3};
 
-    protected void exchange(Comparable[] data, int i, int j) {
-        Comparable temp = data[i];
+    public abstract void sort(int[] data);
+
+    protected void exchange(int[] data, int i, int j) {
+        int temp = data[i];
         data[i] = data[j];
         data[j] = temp;
     }
 
-    protected void print(Comparable[] data) {
-        for (Comparable comparable : data) {
-            System.out.print(comparable + " ,");
+    protected void print(int[] data) {
+        for (int value : data) {
+            System.out.print(value + " ,");
         }
         System.out.println();
     }
 
-    protected boolean less(Comparable a, Comparable b) {
-        return a.compareTo(b) < 0;
+    protected boolean less(int a, int b) {
+        return a<b;
     }
 }

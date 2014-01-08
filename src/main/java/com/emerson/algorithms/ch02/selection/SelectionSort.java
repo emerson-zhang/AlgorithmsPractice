@@ -10,9 +10,7 @@ import com.emerson.algorithms.ch02.AbsSort;
  */
 public class SelectionSort extends AbsSort {
 
-    public static final Integer[] DATAS = new Integer[]{2, 1, 5, 7, 4, 3};
-
-    public void sort(Comparable[] data) {
+    public void sort(int[] data) {
         for (int i = 0; i < data.length - 1; i++) {
             for (int j = i + 1; j < data.length; j++) {
                 if (less(data[j],data[i])) {
