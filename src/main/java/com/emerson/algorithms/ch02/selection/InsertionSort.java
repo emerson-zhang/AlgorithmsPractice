@@ -31,10 +31,7 @@ public class InsertionSort extends AbsSort {
             System.out.println("----------");
 
             for (int j = i - 1; j >= 0 && less(data[j + 1], data[j]); j--) {
-
-                int temp = data[j];
-                data[j] = data[j + 1];
-                data[j + 1] = temp;
+                exchange(data, j,j+1);
 
                 print(data);
             }
