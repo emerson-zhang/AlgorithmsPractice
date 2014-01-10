@@ -8,7 +8,7 @@ package com.emerson.algorithms.ch02;
  */
 public abstract class AbsSort {
 
-    public static final int[] DATAS = new int[]{2, 1, 5, 7, 4, 3};
+    public static final int[] DATAS = new int[]{3,0,1,8,7,2,5,4,9,6};
 
     public abstract void sort(int[] data);
 
